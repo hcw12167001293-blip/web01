@@ -3,11 +3,11 @@
 /*視窗背景色設定*/
 
 body {
-    background-color: #fbf9cc;
+    background-color: #baabdb;
     background-image: url(./images/bg.png);
     background-repeat: repeat-x;
-    color: #0a5694
-}
+    color: #5ea11f
+}it
 
 /*連結顏色設定*/
 a:link {
