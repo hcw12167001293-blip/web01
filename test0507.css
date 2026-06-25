@@ -1,0 +1,27 @@
+td {
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    h2[class="brand"] {
+        color: #FF3300;
+    }
+
+    img[alt~="Logo"] {
+        width: 80px;
+        height: 80px;
+    }
+
+    a[href^="https://"] {
+        color: #FF0000;
+        text-decoration: none;
+    }
+
+    img[src$=".png"] {
+        border: 1px solid #000;
+    }
+
+    a[href*="tcnr"] {
+        background-color: yellow;
+    }

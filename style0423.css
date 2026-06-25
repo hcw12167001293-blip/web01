@@ -1,0 +1,385 @@
+@charset "utf-8";
+
+/*視窗背景色設定*/
+
+body {
+    background-color: #fbf9cc;
+    background-image: url(./images/bg.png);
+    background-repeat: repeat-x;
+    color: #0a5694
+}
+
+/*連結顏色設定*/
+a:link {
+    color: green;
+    text-decoration: none;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: orange;
+}
+
+a:active {
+    color: #3699e8;
+}
+
+/*頁首,導覽,頁尾的共通設定*/
+/* header, nav, footer{
+text-align: left;
+} */
+header {
+    text-align: center;
+}
+
+.introduce {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 2;        /* 行高拉開，更易閱讀 */
+    color: #174972;
+}
+
+nav {
+    text-align: center;
+    margin: 20px auto;
+    padding: 5px auto;
+}
+
+footer {
+    text-align: center;
+}
+
+/*頁面標題設定*/
+h1 {
+    color: aliceblue;
+    background-color: #59a986;
+    /* 漸層設定 */
+    background: linear-gradient(to bottom, #6eba99, #4b9e7a);
+    
+    width: 500px;
+    border: 5px solid #95dbbd;
+    padding: 30px;
+    box-sizing: content-box;
+    margin: 20px auto;
+    
+    /* 讓原本方方正正的格子變「圓角」 */
+    border-radius: 50px;
+    font-size: 230%;
+    
+    /* 文字陰影 */
+    text-shadow: 5px 5px 3px coral;
+    
+    /* 行高（修正處） */
+    line-height: 1.5em; 
+    
+    /* 字體清單（修正處） */
+    font-family: "Microsoft JhengHei", sans-serif;
+}
+
+/*導覽樣式設定*/
+.menu{
+    margin-left: -2.5em;
+    font-size: 20px;
+}
+.menu li{
+    border: 2px solid #6fbb9a;
+    list-style-type: none;
+    display: inline-block;
+    width: 200px;
+    margin: 0 10px;
+    /* padding: 10px;
+    border-radius: 10px; */
+    /* background-color: #6fbb9a; */
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    background-color: #6fbb9a;
+    padding: 10px;
+    display: block;
+    border-radius: 10px;
+}
+
+
+/*內容區塊邊框設定*/
+.content{
+    background-color: #fff;
+    width: 960px;
+    border: 1px solid #f7c7a3;
+    margin: 30px auto;
+    padding: 40px 80px;
+    box-sizing: border-box;
+}
+/*次標題設定*/
+h2{
+    color: #76bd9b;
+    border: 1px dotted #76bd9b;
+    border-left: 10px solid #d0e35b;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+
+/*小標題設定*/
+h3{
+    color: #ff705b;
+    background-color: #fbf9cc;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px #eeb3aa inset;
+}
+
+
+
+/*文繞圖設定*/
+.imgL{
+    float: left;
+    margin-right: 20px;
+}
+.imgR{
+    float: right;
+    margin-left: 20px;
+}
+.clear{
+    clear: both;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/*「更多介紹」連結設定*/
+.more{
+    text-align: right;
+}
+
+.more::after{
+    content: url(./images/ico_arrow.png);
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/*連結圖示設定*/
+
+/*圓形圖片設定*/
+.imgRad{
+     border-radius: 10%;
+     border: 1px solid #bad7f0;
+}
+
+/*區塊間分隔*/
+   div.content > section ~ section{
+        margin-top: 50px;
+   }
+/*表格設定*/
+table{
+     width: 100%;
+     border: 2px solid #f7c7a3;
+     margin-bottom: 30px;
+     border-collapse: collapse;
+     /* border-spacing: 10px; */
+}
+
+table th, table td{
+     border: 1px solid #f7c7a3;
+     padding: 10px 20px;
+}
+
+table th{
+     background-color: #ffeeee;
+     text-align: left;
+     width: 8em;
+}
+
+table caption{
+     margin-bottom: 10px;
+}
+
+/*表單設定*/
+table input[type="text"],
+table input[type="email"],
+table textarea{
+     border: 1px solid #CCCCCC;
+     padding: 10px;
+     font-size: 1em;
+     width: 100%;
+     box-sizing: border-box;
+}
+
+table input[type="text"]:focus,
+table input[type="email"]:focus,
+table textarea:focus{
+     background-color: #d0e35b;
+     border: 1px solid #ff705b;
+     border-radius: 10px;
+     outline: none;
+}
+
+/*按鈕設定*/
+.btns{
+     text-align: center;
+}
+
+.btns input{
+     width: 200px;
+     background-color: #fff;
+     border: 2px solid #f7c7a3;
+     padding: 10px;
+     border-radius: 10px;
+     font-size: 1em;
+     color: #7107b8;
+     margin: 0 10px;
+}
+
+.btns input:hover{
+     background-color: #f6d9c9;
+}
+
+.detail-container {
+    max-width: 750px;      /* 集中視覺，閱讀不費力 */
+    margin: 40px auto;     /* 上下留空 40px，左右置中 */
+    padding: 0 20px;       /* 預留左右內襯，防止貼邊 */
+}
+
+/* 內容白底圖卡 */
+.detail-card {
+    background-color: #ffffff;
+    border: 1px solid #e3ebd7; /* 配合您的綠色調邊框 */
+    border-radius: 12px;       /* 圓角讓質感提升 */
+    padding: 35px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* 輕微陰影 */
+}
+
+/* 詳細頁標題 */
+.food-title {
+    color: #437c17;        /* 配合主頁的綠色主題 */
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;    /* 標題居中 */
+}
+
+/* 圖片區塊 */
+.detail-img-box {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;   /* 與下方資訊拉開距離 */
+}
+
+/* 圖片本身 */
+.detail-img-box img {
+    width: 100%;           /* 寬度撐滿 */
+    max-height: 450px;     /* 限制最高高度，避免大圖過長 */
+    object-fit: cover;     /* 圖片自動裁切不變形 */
+    border-radius: 8px;    /* 圖片微圓角 */
+    padding: 20px;
+}
+
+/* 店家資訊清單 */
+.food-intro-list {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 2;        /* 行高拉開，更易閱讀 */
+    color: #444444;
+}
+
+.food-meta {
+    list-style: none;      /* 移除傳統圓點 */
+    padding: 0;
+    margin-bottom: 30px;
+    background-color: #f9fbf7; /* 淡淡的綠底襯托 */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.food-meta li {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 2;        /* 行高拉開，更易閱讀 */
+    color: #444444;
+}
+
+/* 美味心得區塊 */
+.food-content h3 {
+    color: #2c5210;
+    border-left: 4px solid #6aa84f; /* 左側綠色裝飾線 */
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.food-content p {
+    font-size: 18px;
+    line-height: 1.8;      /* 舒適的內文行高 */
+    color: #555555;
+    text-align: justify;   /* 文字左右對齊 */
+}
+
+/* 返回主頁按鈕區塊 */
+.back-box {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* 按鈕樣式 */
+.back-btn {
+    display: inline-block;
+    background-color: #6aa84f; /* 配合主題的綠色按鈕 */
+    color: #ffffff;
+    text-decoration: none;     /* 拿掉超連結底線 */
+    padding: 12px 35px;
+    border-radius: 25px;       /* 膠囊造型 */
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease; /* 平滑過渡動畫 */
+}
+
+/* 滑鼠懸停效果 */
+.back-btn:hover {
+    background-color: #4e8234; /* 顏色變深 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    display: inline-block;     /* 修正：確保這行與下方樣式都在大括號內部 */
+    background-color: #6aa84f;
+    color: #ffffff;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+body, p, li, td, th, ul {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #333333;
+}
+
+.food-intro-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.food-intro-list li {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 8px;
+    color: #333333;
+}
+
+.food-intro-list strong {
+    color: #444444;
+    margin-right: 5px;
+}

@@ -1,0 +1,29 @@
+h1{
+    color: crimson;
+    font-size: x-large;
+}
+p{
+    color:yellowgreen;
+    font-size: 3;
+}
+#a{
+    color:chocolate
+}
+#b{
+    color:fuchsia
+}
+.first{
+    color: blue;
+}
+ul li{
+    color: crimson;
+}
+ul>li{
+    color: rgb(97, 20, 220);
+}
+h2+p{
+    color: rgb(93, 89, 129);
+}
+h2~p{
+    color:rgb(7, 225, 233)
+}
