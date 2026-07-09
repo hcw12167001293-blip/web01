@@ -54,7 +54,7 @@ footer {
 
 /*頁面標題設定*/
 h1 {
-    color: aliceblue;
+    color: rgb(8, 126, 228);
     background-color: #59a986;
     /* 漸層設定 */
     background: linear-gradient(to bottom, #6eba99, #4b9e7a);
